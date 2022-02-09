@@ -5,3 +5,5 @@
 To delete all saved links you have to double click "Delete All"
 
 I made it using pure HTML CSS and Javascript
+
+![Alt text](/googleChromeExtension.png?raw=true "Optional Title")
