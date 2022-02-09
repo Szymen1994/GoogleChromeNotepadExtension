@@ -30,7 +30,7 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button class="delete-one">X</button>
+                <button class="delete-one" id="${[i+1]}" onclick="deleteOne()">X</button>
             </li>
         `
     }
@@ -44,6 +44,10 @@ deleteBtn.addEventListener("dblclick", function() {
     render(myLeads)
 })
 
+function deleteOne() {
+    console.log(myLeads)
+}
+
 //add input value to the myLeads array 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
@@ -51,3 +55,6 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     render(myLeads)
 })
+
+
+
